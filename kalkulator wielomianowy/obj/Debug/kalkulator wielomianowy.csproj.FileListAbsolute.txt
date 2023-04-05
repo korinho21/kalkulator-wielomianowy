@@ -1,0 +1,11 @@
+D:\Vstudio\projekty\kalkulator wielomianowy\bin\Debug\kalkulator wielomianowy.exe.config
+D:\Vstudio\projekty\kalkulator wielomianowy\bin\Debug\kalkulator wielomianowy.exe
+D:\Vstudio\projekty\kalkulator wielomianowy\bin\Debug\kalkulator wielomianowy.pdb
+D:\Vstudio\projekty\kalkulator wielomianowy\obj\Debug\kalkulator wielomianowy.csproj.AssemblyReference.cache
+D:\Vstudio\projekty\kalkulator wielomianowy\obj\Debug\kalkulator wielomianowy.csproj.SuggestedBindingRedirects.cache
+D:\Vstudio\projekty\kalkulator wielomianowy\obj\Debug\kalkulator_wielomianowy.Form1.resources
+D:\Vstudio\projekty\kalkulator wielomianowy\obj\Debug\kalkulator_wielomianowy.Properties.Resources.resources
+D:\Vstudio\projekty\kalkulator wielomianowy\obj\Debug\kalkulator wielomianowy.csproj.GenerateResource.cache
+D:\Vstudio\projekty\kalkulator wielomianowy\obj\Debug\kalkulator wielomianowy.csproj.CoreCompileInputs.cache
+D:\Vstudio\projekty\kalkulator wielomianowy\obj\Debug\kalkulator wielomianowy.exe
+D:\Vstudio\projekty\kalkulator wielomianowy\obj\Debug\kalkulator wielomianowy.pdb
