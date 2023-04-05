@@ -70,7 +70,7 @@ namespace kalkulator_wielomianowy
             }
 
         }
-        private void WspolczynnikETextBox_TextChanged(Object sender, EventArgs e)
+        private void WspolczynnikFTextBox_TextChanged(Object sender, EventArgs e)
         {
             double value;
             if (Double.TryParse(WspolczynnikFTextBox.Text, out value))
@@ -83,7 +83,7 @@ namespace kalkulator_wielomianowy
             }
 
         }
-        private void WspolczynnikFTextBox_TextChanged(Object sender, EventArgs e)
+        private void WspolczynnikGTextBox_TextChanged(Object sender, EventArgs e)
         {
             double value;
             if (Double.TryParse(WspolczynnikGTextBox.Text, out value))
@@ -295,6 +295,7 @@ namespace kalkulator_wielomianowy
 
 
             }
+            return double.Parse(wyrazenie);
         }
                     private void ObliczButton1_Click(object sender, EventArgs e)
         {
@@ -332,9 +333,9 @@ namespace kalkulator_wielomianowy
             double z = c + g;
 
             //Wyświetl wyniki
-            WspolczynnikATextBox = x.ToString();
-            WspolczynnikBTextBox = y.ToString();
-            WspolczynnikCTextBox = z.ToString();
+            WspolczynnikATextBox.Text = x.ToString();
+            WspolczynnikBTextBox.Text = y.ToString();
+            WspolczynnikCTextBox.Text = z.ToString();
         }
 
         private void OdejmijButton_Click(object sender, EventArgs e)
@@ -355,9 +356,9 @@ namespace kalkulator_wielomianowy
             double z = c - g;
 
             //Wyświetl wyniki
-            WspolczynnikATextBox = x.ToString();
-            WspolczynnikBTextBox = y.ToString();
-            WspolczynnikCTextBox = z.ToString();
+            WspolczynnikATextBox.Text = x.ToString();
+            WspolczynnikBTextBox.Text = y.ToString();
+            WspolczynnikCTextBox.Text = z.ToString();
 
         }
 
@@ -370,7 +371,7 @@ namespace kalkulator_wielomianowy
             
 
             // Wyświetl wynik
-            WynikTextBox.Text = "Result: " + result.ToString();
+           // WynikTextBox.Text = "Result: " + result.ToString();
         }
     }
 }
