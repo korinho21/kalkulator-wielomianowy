@@ -4,11 +4,14 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NCalc;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace kalkulator_wielomianowy
 {
@@ -297,7 +300,7 @@ namespace kalkulator_wielomianowy
             }
             return double.Parse(wyrazenie);
         }
-                    private void ObliczButton1_Click(object sender, EventArgs e)
+        private void ObliczButton1_Click(object sender, EventArgs e)
         {
             //Pobierz współczynniki wielomianu
             double a = double.Parse(WspolczynnikATextBox.Text);
@@ -305,7 +308,7 @@ namespace kalkulator_wielomianowy
             double c = double.Parse(WspolczynnikCTextBox.Text);
 
             //Oblicz deltę i pierwiastki wielomianu
-            double delta  = b * b - 4 * a * c;
+            double delta = b * b - 4 * a * c;
             double x1 = (-b - Math.Sqrt(delta)) / (2 * a);
             double x2 = (-b + Math.Sqrt(delta)) / (2 * a);
 
@@ -365,13 +368,26 @@ namespace kalkulator_wielomianowy
         private void ObliczButton2_Click(object sender, EventArgs e)
         {
             //Pobiera działanie
-            double x = double.Parse(DzialanieTextBox.Text);
+            string dzialanie = DzialanieTextBox.Text;
 
-            double result;
-            
+            // Utwórz obiekt wyrażenia NCalc na podstawie działania użytkownika
+            NCalc.Expression wyrazenie = new NCalc.Expression(dzialanie);
 
-            // Wyświetl wynik
-           // WynikTextBox.Text = "Result: " + result.ToString();
+
+            // Sprawdź, czy wyrażenie jest poprawne i jeśli tak, oblicz wynik
+            if (wyrazenie.HasErrors())
+            {
+                // Wyświetl komunikat o błędzie
+                WynikTextBox.Text = "Błąd: nieprawidłowe wyrażenie";
+            }
+            else
+            {
+                // Oblicz wynik i wyświetl go
+                double wynik = (double)wyrazenie.Evaluate();
+                WynikTextBox.Text = "Wynik: " + wynik.ToString();
+            }
         }
     }
+
 }
+

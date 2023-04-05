@@ -9,3 +9,5 @@ D:\Vstudio\projekty\kalkulator wielomianowy\obj\Debug\kalkulator wielomianowy.cs
 D:\Vstudio\projekty\kalkulator wielomianowy\obj\Debug\kalkulator wielomianowy.csproj.CoreCompileInputs.cache
 D:\Vstudio\projekty\kalkulator wielomianowy\obj\Debug\kalkulator wielomianowy.exe
 D:\Vstudio\projekty\kalkulator wielomianowy\obj\Debug\kalkulator wielomianowy.pdb
+D:\Vstudio\projekty\kalkulator wielomianowy\bin\Debug\NCalc.dll
+D:\Vstudio\projekty\kalkulator wielomianowy\obj\Debug\kalkulator wielomianowy.csproj.CopyComplete
